@@ -1,0 +1,11 @@
+id_obat,nama,deskripsi,manfaat,efek_samping,kategori,link_gambar
+1,Cefadroxil,"Cefadroxil adalah antibiotik untuk mengatasi berbagai infeksi bakteri, misalnya di tenggorokan, amandel, kulit, atau saluran kemih. Selain itu, obat ini juga bisa digunakan untuk mencegah infeksi di lapisan jantung (endokarditis) sebelum operasi gigi atau tindakan medis di saluran pernapasan atas.",Mengatasi atau mencegah infeksi bakteri,"Mual atau muntah 
+Sakit perut 
+Diare",Antibiotik golongan sefalosporin,https://storage.googleapis.com/gambarobat/Cefadroxi.png
+2,Fenofibrate,"Fenofibrate adalah obat untuk menurunkan kadar trigliserida dan kolesterol jahat (LDL), serta meningkatkan kadar kolesterol baik (HDL) di dalam darah. Obat ini juga dapat digunakan untuk menurunkan risiko terjadinya pankreatitis pada orang yang memiliki kadar trigliserida tinggi.",Mengurangi kadar trigliserida dan kolesterol jahat (low density lipoprotein/LDL) di dalam tubuh.,"Mual atau muntah
+Diare
+Sembelit
+Heartburn
+Sakit kepala
+Nyeri pada punggung, lengan, atau kaki
+Hidung tersumbat atau meler",Obat penurun kolesterol golongan fibrat,https://storage.googleapis.com/gambarobat/Fenofibrate.png
