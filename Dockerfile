@@ -2,7 +2,7 @@ FROM python:3.8
 
 WORKDIR /app
 
-COPY ./app
+COPY . /app
 
 RUN python -m venv venv
 RUN /bin/bash-c"source venv/bin/activate"
