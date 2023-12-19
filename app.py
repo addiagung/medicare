@@ -66,7 +66,12 @@ def detection():
                     "message": "Detection successful",
                 },
                 "data": {
-                    "model": class_names,
+                    "nama": class_names[0],
+                    "deskripsi": class_names[1],
+                    "manfaat": class_names[2],
+                    "efek_samping": class_names[3],
+                    "kategori": class_names[4],
+                    "link_gambar": class_names[5],
                     "confidence": float(confidence_score)
                 }
             }), 200
@@ -78,15 +83,22 @@ def detection():
                 },
                 "data": None
             }), 400
+        
+    # Get All Data
     if request.method == "GET":
         return jsonify({
             "status": {
                 "code": 200,
                 "message": "Successful"
             },
-            "data": {
-                "model": labels,
-            }
+            "data": [{
+                "nama": item[0],
+                "deskripsi": item[1],
+                "manfaat": item[2],
+                "efek_samping": item[3],
+                "kategori": item[4],
+                "link_gambar": item[5],
+            } for item in labels]
         }), 200
     else:
         return jsonify({
@@ -128,9 +140,14 @@ def search():
             "code": 200,
             "message": "Search successful"
         },
-        "data": {
-            "results": filtered_labels
-        }
+        "data": [{
+            "nama": item[0],
+            "deskripsi": item[1],
+            "manfaat": item[2],
+            "efek_samping": item[3],
+            "kategori": item[4],
+            "link_gambar": item[5],
+        } for item in filtered_labels]
     }), 200
 
 # Run the Flask application
